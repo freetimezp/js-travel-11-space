@@ -1,6 +1,7 @@
-import type { Metadata } from 'next'
-import { Bellefair, Barlow_Condensed } from 'next/font/google'
-import './globals.css'
+import React from 'react';
+import type { Metadata } from 'next';
+import { Bellefair, Barlow_Condensed } from 'next/font/google';
+import './globals.css';
 import Navbar from '@/components/Navbar';
 
 const bellefair = Bellefair({

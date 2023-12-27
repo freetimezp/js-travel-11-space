@@ -1,5 +1,6 @@
 "use client";
 import React, { useCallback, useState } from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import logoImg from '../assets/shared/logo.svg';
@@ -73,6 +74,15 @@ function Navbar() {
                                 <span className='block font-bold min-w-[20px]'>
                                     {item.title}
                                 </span>
+                                {
+                                    isActive(item.href) && (
+                                        <motion.span
+                                            layoutId='underline'
+                                            className='absolute bottom-0 right-0 h-full w-1 md:w-full 
+                                            md:h-1 bg-white'
+                                        />
+                                    )
+                                }
                             </li>
                         </Link>
                     )
