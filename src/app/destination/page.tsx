@@ -71,7 +71,7 @@ function DestinationPage() {
             />
 
             <main className=" relative z-10 p-6 md:px-24 md:pb-0 ">
-                <PageTitle number={1} title="Pick your destination" />
+                <PageTitle number={2} title="Pick your destination" />
 
                 <motion.div
                     variants={SLIDE_LEFT}
